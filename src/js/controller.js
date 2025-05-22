@@ -18,6 +18,11 @@ import 'regenerator-runtime/runtime'; // polyfilling async/await
 // }
 
 ///////////////////////////////////////
+const newFeature = function(){
+  console.log('welcome to the application!');
+  
+}
+
 const controlRecipes = async function () {
   const id = window.location.hash.slice(1);
 
@@ -138,6 +143,7 @@ const init = function (){
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  newFeature();
 }
 init();
 
